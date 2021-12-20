@@ -9,21 +9,13 @@
     margin: -40px 0;
 }
 
-header nav ul {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    font-size: 16px;
-    color: white;
-    list-style: none;
-}
-
-#nav-menu {
+#ul-menu {
     /* display:flex;
     justify-content: space-between; */
     margin-left: 29%;
 }
 
-#nav-menu li + li:before {
+#ul-menu li + li:before {
     content: " | ";
     padding: 0 5px   ;
 }
@@ -35,7 +27,7 @@ header{
     padding: 30px 10%;
 }
 
-nav ul li, a{
+nav ul li{
     text-decoration: none;
     list-style: none;
     color: black;
@@ -44,30 +36,40 @@ nav ul li, a{
     margin-right: 0px;
 }
 
-.menu {
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 21px;
     letter-spacing: 0.071em;
 
+
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size:small
-}
+
+
 
 footer{
     background-color: #f6f5eb;
     margin-top: 40px;
-    height: 250px;
+    height: 270px;
     padding-top: 40px;
 }
 
 .container-footer-all{
     width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    color:black
+ 
 }
 
 .container-footer-body{
     display: flex;
     justify-content: center;
+
 }
 
 
@@ -79,16 +81,26 @@ footer{
     margin-left: 250px;
 }
 
- ul li a:hover{
+
+
+.container-footer-menu ul li {
+    list-style: none;
+
+}
+
+.container-footer-menu ul li a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.071em;
+    text-decoration: none;
+    color:black
+}
+
+ul li a:hover{
     color: #8d8741;
   
 }
 
-.container-footer-menu ul li {
-    list-style: none;
-    letter-spacing: 0.071em;
-    font-weight:normal;
-}
 
 .container-end-footer{
     margin-top: 25px;
