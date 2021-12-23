@@ -10,9 +10,8 @@
 }
 
 #ul-menu {
-    /* display:flex;
-    justify-content: space-between; */
-    margin-left: 29%;
+     display:flex;
+     justify-content: center;
 }
 
 #ul-menu li + li:before {
@@ -21,7 +20,7 @@
 }
 
 header{
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     background-color: #f6f5eb   ; 
     align-items: center;
     padding: 30px 10%;
@@ -36,6 +35,8 @@ nav ul li{
     margin-right: 0px;
 }
 
+
+
 nav ul li a{
     text-decoration: none;
     color: black;
@@ -47,6 +48,24 @@ nav ul li a{
 
 
 }
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#8d8741;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
 
 
 
@@ -101,9 +120,19 @@ ul li a:hover{
   
 }
 
-
+/* 
 .container-end-footer{
     margin-top: 25px;
+    display: flex;
+    justify-content: center;
+} */
+.creacion{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.linkedin-github{
+  
     display: flex;
     justify-content: center;
 }
