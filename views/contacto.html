@@ -36,16 +36,78 @@
         </nav>
     </header>
     <main>
-        <section>
-            <img src="../assets/images/piscina.jpg" alt="piscina" height="300">
-        </section>
+       
 
         <section>
-            <h1>CONTACTO</h1>
+            <div class="encabezado"><h1>CONTACTO</h1></div>
+            <p>
+                Dejanos tu consulta y en breve te responderemos
+            </p>
+            
         </section>
 
-        <section>
-            <h2>Contáctenos</h2>
+        <section class="container-form">
+            <form class="contact-form" action="">
+                <div class="container-contact-form">
+                <!-- nombre y apellido -->
+                <div class="contact-flex-contact-flex--id">
+                    <!-- nombre -->
+                    <div class="contact-name">
+                        <label class="input-name" for="name">Nombre</label>
+                        <input class="form-control  form-control-lg" type="text" name="name" placeholder="Ingresá tu nombre" required="">
+                    </div>
+                    <!-- apellido -->
+                    <div class="contact-surname">
+                        <label class="input-name" for="apellido">Apellido</label>
+                        <input class="form-control  form-control-lg" type="text" name="apellido" placeholder="Ingresá tu apellido" required="">
+                    </div>
+                </div>
+                <!-- e-mail y confirmacion-->
+                <div class="contact-flex-contact-flex--id">
+                    <!-- e-mail -->
+                    <div class="contact-e-mail">
+                        <label class="input-name" for="email">E-mail</label>
+                        <input class="form-control  form-control-lg" type="email" name="email" placeholder="Ingresá tu e-mail" required="">
+                    </div>
+                    <!-- confirmacion -->
+                    <div class="contact-confirmation">
+                        <label class="input-name" for="email">Confirmar E-mail</label>
+                        <input class="form-control  form-control-lg" type="email" name="email" placeholder="Confirmá tu e-mail" required="">
+                    </div>
+                </div>
+                
+                <!-- telefono -->
+                <div class="contact-flex-contact-flex--id">
+                    <div class="contact-telefono">
+                    <label class="input-name" for="telefono">Teléfono</label>
+                    <input class="form-control  form-control-lg" type="tel" name="telefono" placeholder="Ingresá tu teléfono">
+                    </div>
+                </div>
+
+                <!-- asunto -->
+                <div class="contact-flex-contact-flex--id">
+                    <div class="select-container">
+                        <label class="input-name" for="asunto">Cantidad de Personas</label>
+                        <select id="disabledSelect" class="form-select form-select-lg mb-3"  aria-label=".form-select-lg example">
+                            <option selected>Seleccioná la cantidad</option>
+                            <option value="quince-personas">Menos de 15</option>
+                            <option value="mas-de-quince">Mas de 15 y menos que 30</option>
+                            <option value="mas-de-treinta">Mas de 30</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- consulta -->
+                <div class="container-consulta">
+                    <label class="input-name" for="consulta">Consulta</label>
+                    <textarea class="form-control  form-control-lg" name="consulta" id="" cols="30" rows="7" maxlength="1000" placeholder="Ingresá tu consulta"></textarea>
+                    <!-- botones -->
+                    <div class="container-botones">
+                        <button type="submit" class="btn btn-outline-secondary btn-lg">Enviar</button>
+                        <button type="reset" class="btn btn-outline-secondary btn-lg">Limpiar</button>
+                </div>
+            </div>
+        </div>
+            </form>
         </section>
 
         <section>

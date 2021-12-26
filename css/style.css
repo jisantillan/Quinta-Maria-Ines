@@ -156,7 +156,7 @@ ul li a:hover{
     justify-content: center;
 } */
 .creacion{
-    margin-top: 25px;
+    margin-top: 1.2em;
     display: flex;
     justify-content: center;
 }
@@ -184,8 +184,96 @@ main
     line-height: 1.5;
 }
 
+.encabezado{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    margin-top: 2em;
+    max-width: 50em;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+}
 
 
+.container-contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40em;
+}
+
+label{
+
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+
+
+.contact-name,.contact-e-mail,.contact-surname, .contact-confirmation, .select-container,.contact-telefono,.container-consulta{
+    
+    
+    width: 100%;
+    
+        
+}
+
+
+
+.contact-name,.contact-e-mail, .contact{
+margin-right: 2em;
+}
+
+.contact-flex-contact-flex--id{
+    display: flex;
+    /* flex-direction: row; */
+    margin-bottom: 45px;
+    /* justify-content: center; */
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.container-consulta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-botones{
+    margin-top: 30px;
+    display: flex;
+    margin-bottom: 30px;
+
+}
+
+.btn-outline-secondary {
+    margin-right: 20px;
+}
+
+/* 
+ .contact-form .contact-flex--id .contact-name, .contact-form .contact-flex--id .contact-e-mail, .contact-form .contact-flex--id .contact-surname, .contact-form .contact-flex--id .contact-confirmation {
+    width: 100%;
+    margin-right: 25px;
+}  */
+
+/* .container {
+    max-width: 960px;
+    width: 100%;
+padding-right: var(--bs-gutter-x,.75rem);
+padding-left: var(--bs-gutter-x,.75rem);
+margin-right: auto;
+margin-left: auto;
+} */
 
 
 
