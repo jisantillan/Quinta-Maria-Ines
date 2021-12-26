@@ -78,6 +78,19 @@ nav ul li a{
     margin-top:13px;
   }
 
+  .whatsapp-static {
+    font-size:1em;
+    color:#8d8741;
+    margin-right: .5em;
+  }
+
+  .container-socialmedia{
+      margin-top: 40px;
+
+  }
+
+  
+
 .container-contacto{
     margin-top: 2em;
 }
