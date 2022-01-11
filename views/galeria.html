@@ -15,16 +15,17 @@
    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
    <!-- Whatsapp-->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <!-- js -->
-   <link rel="stylesheet" href="js/bootstrap.min.js">
-
+  
 </head>
 
 <body>
     <!-- Inicio Header -->
     <header>
         <nav>
-            <ul id="ul-menu">
+            <button class="hamburguer" id="hamburguer">
+                <i class="fa fas fa-bars"></i>
+            </button>
+            <ul id="ul-menu" class="ul-menu">
                 <li> <a href="../index.html">Inicio</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -46,8 +47,68 @@
             </p>
         </section>
 
-        <section>
-            <!-- galeria de imagenes -->
+        <section class="galeria-container">
+
+            <div class="photo-container">
+                <div>
+                    <img src="../assets/images/pingpong.jpg" alt="piscina" height="300">
+                </div >
+            </div>
+           
+
+            <div class="photo-container">
+                <div>
+                    <img src="../assets/images/parrilla2.jpeg" alt="piscina" height="300">
+                </div>
+            </div>
+
+            <div class="photo-container">
+                <div>
+                    <img src="../assets/images/parque.jpg" alt="piscina" height="300">
+                </div>   
+            </div>
+
+            <div class="photo-container">
+                <div>
+                    <img src="../assets/images/quincho.jpeg" alt="piscina" height="300">
+                </div>   
+            </div>
+
+            <div class="photo-container">
+                <div>
+                    <img src="../assets/images/pileta.jpeg" alt="piscina" height="300">
+                </div>   
+            </div>
+
+            <div class="photo-container">
+                <div>
+                    <img src="../assets/images/adelante.jpeg" alt="piscina" height="300">
+                </div>   
+            </div>
+
+            <div class="photo-container">
+                <div>
+                    <img src="../assets/images/comedor.jpg" alt="piscina" height="300">
+                </div>   
+            </div>
+
+            <div class="photo-container">
+                <div>
+                    <img src="../assets/images/parrilla.jpg" alt="piscina" height="300">
+                </div>   
+            </div>
+
+            <div class="photo-container">
+                <div>
+                    <img src="../assets/images/portada2.jpg" alt="piscina" height="300">
+                </div>   
+            </div>
+        </section>
+
+        <section video-container>
+            <div class="video-galeria">
+                <video src="../assets/video/video.mp4" type="video/mp4" controls="play"></video>
+            </div>
         </section>
 
         <section class="contacto">
@@ -152,6 +213,8 @@
         </div>
     </footer>
     <!-- Fin Footer -->
+    <script src="../js/menu.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
