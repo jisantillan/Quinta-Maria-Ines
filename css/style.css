@@ -19,7 +19,7 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 63em;
+    height: 58em;
     padding-top: 2em;
 }
 
@@ -85,6 +85,11 @@ nav{
     flex-wrap: wrap;
 }
 
+.slide-down{
+    margin-top: 48em;
+    display: flex;
+    justify-content: center;
+}
 /* Fin Header */
 
 /* Whatsapp */
@@ -110,6 +115,12 @@ nav{
     font-size: 1em;
     color: #8d8741;
     margin-right: .5em;
+}
+
+.whatsapp:hover{
+    color: #FFF;
+    transform: scale(1.05);
+    transition: all .5s;
 }
 
 /*Fin Whatsapp */
@@ -186,6 +197,14 @@ nav{
     color: #5B6977;
 }
 
+.card:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transition: all .5s;
+}
+
 
 /* Fin Servicios */
 
@@ -203,7 +222,7 @@ nav{
     } 
 
 .photo-container div img{
-    
+   
     width: 100%;
     height: 9em;
     object-fit: cover;
@@ -211,9 +230,13 @@ nav{
 
 }
 
-.photo-container:hover{
-    filter: opacity(0,0);
-    transform: scale(1.04);
+.photo-container:hover {
+    transform: scale(1.05);
+    transition: all .5s;
+
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -moz-transform: scale(1.05);
 }
 
 
