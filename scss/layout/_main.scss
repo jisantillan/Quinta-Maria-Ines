@@ -41,7 +41,17 @@ main {
     @include flex (row, nowrap, center);
 }
 
-/* Bootstrap */
-$card-border-radius:               1.25rem !default;
 
+.container{
+    margin-top: 0px;
+    @include for_breakpoint(mobile tablet ) {
+        margin-top: 20px;
+    }
+}
+
+.card-img-top{
+    @include for_breakpoint(mobile tablet ) {
+        height: 200px;
+    }
+}
 
