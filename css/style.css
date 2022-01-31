@@ -163,6 +163,14 @@ main {
   }
 }
 
+#card-service :hover, #card-service2 :hover, #card-service3 :hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transition: all 0.5s;
+}
+
 .card-img-top {
   /* Buscamos por key */
   /* Buscamos por key */

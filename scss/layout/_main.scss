@@ -49,6 +49,12 @@ main {
     }
 }
 
+#card-service :hover, #card-service2 :hover, #card-service3 :hover {
+@include prefijos(scale(1.05));
+transition: all .5s;
+
+}
+
 .card-img-top{
     @include for_breakpoint(mobile tablet ) {
         height: 200px;

@@ -26,7 +26,13 @@
 
 }
 
+@mixin prefijos ($param){
+    transform: $param;
+    -webkit-transform: $param;
+    -o-transform: $param;
+    -moz-transform: $param;
 
+}
 
 
 /* Media Queries */ 
