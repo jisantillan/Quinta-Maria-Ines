@@ -1,0 +1,81 @@
+@use '../core/variables.scss' as *;
+
+footer {
+    background-color: nth($colores, 3);
+    /* background-color:rgb(var(--color_15)); */
+    /* background-color: #f6f5eb; */
+    margin-top: 40px;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.container-footer-all {
+    width: 100%;
+    @include texto ($footer-font, nth($colores, 4), large, 400, normal, normal, none, none, 1.5);
+}
+
+.container-footer-body {
+    @include flex (row, nowrap, center);
+    @include for_breakpoint(mobile tablet) {
+        flex-direction: column;
+    }
+}
+
+
+.col2,.col3 {
+    margin-left: 250px;
+    @include for_breakpoint(mobile tablet) {
+        margin-left: 0;
+        @include flex (row, nowrap, center);
+
+    }
+}
+.col1{
+    @include for_breakpoint(mobile tablet) {
+        margin-left: 0;
+        padding-right:7em; 
+        @include flex (row, nowrap, center);
+
+    }
+}
+
+.container-footer-menu ul li {
+    list-style: none;
+}
+
+.container-footer-menu ul li a {
+    letter-spacing: 0.071em;
+    @include texto (Source Sans Pro, nth($colores, 4), large, 400, normal, center, none, none, 1.5);
+    &:hover {
+        color: #8d8741;
+    }
+}
+
+.creacion {
+    margin-top: 1.2em;
+    @include flex (row, nowrap, center);
+}
+
+.linkedin-github {
+    @include flex (row, nowrap, center);
+}
+
+.container-social-media {
+    margin-top: 40px;
+    @include for_breakpoint(mobile tablet) {
+        @include flex (row, nowrap, center);
+        padding-right: 1em;
+    }
+
+}
+.copyright {
+    @include flex (row, nowrap, center);
+    margin-top: 10px;
+    @include for_breakpoint(mobile tablet) {
+        @include flex (row, nowrap, center);
+        padding-left: 3em;
+    }
+  
+}
+

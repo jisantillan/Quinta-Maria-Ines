@@ -1,0 +1,14 @@
+@import './layout/header';
+@import'./layout/main';
+@import'./core/mixins';
+@import'./core/listas';
+@import'./core/extends';
+@import'./layout/footer';
+@import'./core/variables.scss';
+@import './layout/ubicacion.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@font-face {
+    src: url("/fonts/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF") format("truetype");
+    font-family: "Bahnschrift-Font"
+}

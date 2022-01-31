@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "node": "^17.4.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

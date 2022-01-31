@@ -1,0 +1,81 @@
+@use '../core/mixins'as *;
+@use '../core/listas'as *;
+@use '../core/variables.scss' as *;
+
+header {
+    background-image: url("../assets/images/mujer.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 58em;
+    padding-top: 2em;
+
+    .ul-menu {
+        @include flex (row, nowrap, center);
+        @include for_breakpoint(mobile tablet ) {
+            display: none;
+            flex-direction: column;
+            font-size: .65rem;
+            font-weight: 200;
+        }
+    }
+
+    .ul-menu.show{
+        @include for_breakpoint(mobile tablet ) {
+        display: flex;
+        }
+        
+    }
+
+    #ul-menu li+li:before {
+        content: " | ";
+        padding: 0 5px;
+        @include for_breakpoint(mobile tablet ) {
+            content:none;
+        }
+    }
+
+    nav ul li {
+        @extend %listas;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+
+    nav ul li a {
+        @include texto ($default-font, nth($colores, 1), 1.5rem, 200, normal, center, uppercase, none, 1.5);
+        letter-spacing: 0.071em;
+
+        &:hover {
+            font-weight: 900;
+        }
+    }
+
+    .hamburguer {
+        background-color: transparent;
+        display: none;
+        border: 0;
+        color: #FFF;
+        font-size: 20px;
+        cursor: pointer;
+
+        @include for_breakpoint(mobile tablet) {
+            display: block;
+        }
+    }
+
+    .hamburguer:focus {
+        outline: none;
+    }
+
+    nav {
+        padding: 1em;
+        @include flex (row, nowrap, center);
+    }
+
+    .slide-down {
+        margin-top: 48em;
+        @include flex (row, nowrap, center);
+    }
+}
+

@@ -1,0 +1,14 @@
+
+.container-contacto {
+    margin-top: 2em;
+}
+
+.container-map {
+    @include flex (row, nowrap, center);
+    margin-bottom: 2em;
+}
+
+.container-button {
+    @include flex (row, nowrap, center);
+
+}

@@ -1,0 +1,58 @@
+
+@mixin flex ($direction, $wrap, $justify) {
+    display: flex;
+    flex: {
+        direction: $direction;
+        wrap: $wrap;
+    }
+    justify-content: $justify;
+}
+
+@mixin texto ( $family,$color, $font-size, $font-weight, $font-stretch, $text-align, $text-transform,$text-decoration,$line-height){
+
+    color: $color;
+    font: {
+        family: $family;
+        size: $font-size;
+        weight: $font-weight;
+        stretch: $font-stretch;
+    }
+    text: {
+        align: $text-align;
+        transform: $text-transform;
+        decoration: none;
+    }
+    line-height: 1.5;
+
+}
+
+
+
+
+/* Media Queries */ 
+
+/* Diccionario o Map */
+$media_queries : (
+    'mobile'    : unquote($string: "only screen and (max-width: 667px)") ,
+    'tablet'    : unquote($string: "only screen and (min-width: 481px) and (max-width: 968px)"),
+    'desktop'   : unquote($string: "only screen and (min-width: ($size__site_content_width + 1))")
+);
+
+/* Condicionales*/
+@mixin for_breakpoint($breakpoints) {
+    $conditions : ();
+    @each $breakpoint in $breakpoints {
+        /* Buscamos por key */
+        $conditions: append(
+            $conditions,
+            #{inspect(map-get($media_queries, $breakpoint))},
+            comma
+        );
+    }
+
+    @media #{$conditions} {
+        @content;
+    }
+
+}
+
