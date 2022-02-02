@@ -27,10 +27,7 @@ header .ul-menu {
     font-weight: 200;
   }
 }
-header .ul-menu.show {
-  /* Buscamos por key */
-  /* Buscamos por key */
-}
+
 @media only screen and (max-width: 667px), only screen and (min-width: 481px) and (max-width: 968px) {
   header .ul-menu.show {
     display: flex;
@@ -171,10 +168,7 @@ main {
   transition: all 0.5s;
 }
 
-.card-img-top {
-  /* Buscamos por key */
-  /* Buscamos por key */
-}
+
 @media only screen and (max-width: 667px), only screen and (min-width: 481px) and (max-width: 968px) {
   .card-img-top {
     height: 200px;
@@ -243,10 +237,7 @@ footer {
   }
 }
 
-.col1 {
-  /* Buscamos por key */
-  /* Buscamos por key */
-}
+
 @media only screen and (max-width: 667px), only screen and (min-width: 481px) and (max-width: 968px) {
   .col1 {
     margin-left: 0;
