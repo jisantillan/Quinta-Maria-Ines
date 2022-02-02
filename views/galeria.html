@@ -23,6 +23,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,80 +67,55 @@
 
         <section class="galeria-container">
 
-            <div class="photo-container">
-                <div>
-                    <img src="../assets/images/pingpong.jpg" alt="piscina" height="300">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3 item mb-3"><a href="../assets/images/parrilla2.jpeg"
+                            data-lightbox="photos"><img class="img-fluid" src="../assets/images/parrilla2.jpeg"
+                                alt="parrilla" height="300"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item mb-3"><a href="../assets/images/quincho.jpeg"
+                            data-lightbox="photos"><img class="img-fluid" src="../assets/images/quincho.jpeg"
+                                alt="quincho" height="300"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item mb-3"><a href="../assets/images/piletaCarousel.jpeg"
+                            data-lightbox="photos"><img class="img-fluid" src="../assets/images/piletaCarousel.jpeg"
+                                alt="pileta" height="300"></a></div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 item mb-3"><a href="../assets/images/comedor.jpg"
+                            data-lightbox="photos"><img class="img-fluid" src="../assets/images/comedor.jpg"
+                                alt="comedor" height="300"></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3 item mb-3"><a href="../assets/images/hongos.jpg"
+                        data-lightbox="photos"><img class="img-fluid" src="../assets/images/hongos.jpg"
+                            alt="hongos" height="300"></a></div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3 item mb-3"><a href="../assets/images/quincho2.jpg"
+                        data-lightbox="photos"><img class="img-fluid" src="../assets/images/quincho2.jpg"
+                            alt="quincho2" height="300"></a></div>      
+                            
+                    <div class="col-sm-6 col-md-4 col-lg-3 item mb-3"><a href="../assets/images/comida.jpg"
+                        data-lightbox="photos"><img class="img-fluid" src="../assets/images/comida.jpg"
+                            alt="comida" height="300"></a></div>    
+                                                                           
                 </div>
             </div>
 
-
-            <div class="photo-container">
-                <div>
-                    <img src="../assets/images/parrilla2.jpeg" alt="piscina" height="300">
+            <section video-container>
+                <div class="video-galeria">
+                    <video src="../assets/video/video.mp4" type="video/mp4" controls="play"></video>
                 </div>
-            </div>
+            </section>
 
-            <div class="photo-container">
-                <div>
-                    <img src="../assets/images/parque.jpg" alt="piscina" height="300">
+            <section class="contacto">
+                <div class="container-contacto">
+                    <div class="container-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.7782824526453!2d-58.7803717842613!3d-34.432386555960896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f2196a40e21%3A0x195ac6baca986c2a!2sJuan%20Bautista%20Ambrosetti%203141%2C%20B1635ATE%20Manuel%20Alberti%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1639102600001!5m2!1ses!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="container-button">
+                        <a class="btn btn-outline-secondary btn-lg" href="contacto.html" role="button">Contáctenos</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="photo-container">
-                <div>
-                    <img src="../assets/images/quincho.jpeg" alt="piscina" height="300">
-                </div>
-            </div>
-
-            <div class="photo-container">
-                <div>
-                    <img src="../assets/images/piletaCarousel.jpeg" alt="piscina" height="300">
-                </div>
-            </div>
-
-            <div class="photo-container">
-                <div>
-                    <img src="../assets/images/adelante.jpeg" alt="piscina" height="300">
-                </div>
-            </div>
-
-            <div class="photo-container">
-                <div>
-                    <img src="../assets/images/comedor.jpg" alt="piscina" height="300">
-                </div>
-            </div>
-
-            <div class="photo-container">
-                <div>
-                    <img src="../assets/images/parrilla.jpg" alt="piscina" height="300">
-                </div>
-            </div>
-
-            <div class="photo-container">
-                <div>
-                    <img src="../assets/images/portada2.jpg" alt="piscina" height="300">
-                </div>
-            </div>
-        </section>
-
-        <section video-container>
-            <div class="video-galeria">
-                <video src="../assets/video/video.mp4" type="video/mp4" controls="play"></video>
-            </div>
-        </section>
-
-        <section class="contacto">
-            <div class="container-contacto">
-                <div class="container-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.7782824526453!2d-58.7803717842613!3d-34.432386555960896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f2196a40e21%3A0x195ac6baca986c2a!2sJuan%20Bautista%20Ambrosetti%203141%2C%20B1635ATE%20Manuel%20Alberti%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1639102600001!5m2!1ses!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="container-button">
-                    <a class="btn btn-outline-secondary btn-lg" href="contacto.html" role="button">Contáctenos</a>
-                </div>
-            </div>
-        </section>
+            </section>
     </main>
     <!-- Inicio Footer -->
     <footer>
@@ -232,6 +208,9 @@
     <!-- Fin Footer -->
     <script src="../js/menu.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
 </body>
 
 </html>

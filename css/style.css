@@ -331,6 +331,10 @@ label {
   text-transform: uppercase;
 }
 
+.video-galeria {
+  margin-top: 20px;
+}
+
 .container-contacto {
   margin-top: 2em;
 }
