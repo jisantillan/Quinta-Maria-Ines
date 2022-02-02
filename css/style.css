@@ -327,6 +327,10 @@ footer {
   }
 }
 
+label {
+  text-transform: uppercase;
+}
+
 .container-contacto {
   margin-top: 2em;
 }

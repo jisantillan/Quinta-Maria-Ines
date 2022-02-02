@@ -22,8 +22,8 @@
     <title> Contacto - Quinta de Recreo Maria Ines </title>
     <title>Quinta de Recreo - Contacto</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
 <body>
     <!-- INICIO HEADER -->
     <header>
-       
+
         <nav>
             <button class="hamburguer" id="hamburguer">
                 <i class="fa fas fa-bars"></i>
@@ -51,7 +51,7 @@
         </nav>
         <div class="slide-down">
             <a href="#encabezado"><i class="fa fas fa-chevron-down arrow-from-top" aria-hidden="true"></i></a>
-            </div>
+        </div>
     </header>
     <!-- FIN HEADER -->
 
@@ -59,7 +59,7 @@
 
 
         <section>
-            <div class="encabezado" id="encabezado" >
+            <div class="encabezado" id="encabezado">
                 <h1>CONTACTO</h1>
             </div>
             <p>
@@ -68,51 +68,55 @@
 
         </section>
         <!-- INICIO FORMULARIO -->
-        <section class="container-form">
-            <form class="contact-form" action="">
-                <div class="container-contact-form">
-                    <!-- nombre y apellido -->
-                    <div class="contact-flex-contact-flex--id">
-                        <!-- nombre -->
+        <form class="contact-form" action="">
+            <div class="container">
+
+                <div class="row mb-4">
+                    <div class="col-sm-12 col-md-6 col-lg-6 mb-4">
                         <div class="contact-name">
                             <label class="input-name" for="name">Nombre</label>
                             <input class="form-control  form-control-lg" type="text" name="name"
                                 placeholder="Ingresá tu nombre" required="">
                         </div>
-                        <!-- apellido -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
                         <div class="contact-surname">
                             <label class="input-name" for="apellido">Apellido</label>
                             <input class="form-control  form-control-lg" type="text" name="apellido"
                                 placeholder="Ingresá tu apellido" required="">
                         </div>
                     </div>
-                    <!-- e-mail y confirmacion-->
-                    <div class="contact-flex-contact-flex--id">
-                        <!-- e-mail -->
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-sm-12 col-md-6 col-lg-6 mb-4">
                         <div class="contact-e-mail">
                             <label class="input-name" for="email">E-mail</label>
                             <input class="form-control  form-control-lg" type="email" name="email"
                                 placeholder="Ingresá tu e-mail" required="">
                         </div>
-                        <!-- confirmacion -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
                         <div class="contact-confirmation">
                             <label class="input-name" for="email">Confirmar E-mail</label>
                             <input class="form-control  form-control-lg" type="email" name="email"
                                 placeholder="Confirmá tu e-mail" required="">
                         </div>
                     </div>
+                </div>
 
-                    <!-- telefono -->
-                    <div class="contact-flex-contact-flex--id">
+                <div class="row mb-4">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="contact-telefono">
                             <label class="input-name" for="telefono">Teléfono</label>
                             <input class="form-control  form-control-lg" type="tel" name="telefono"
                                 placeholder="Ingresá tu teléfono">
                         </div>
                     </div>
+                </div>
 
-                    <!-- cantidad -->
-                    <div class="contact-flex-contact-flex--id">
+                <div class="row mb-4">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="select-container">
                             <label class="input-name" for="asunto">Cantidad de Personas</label>
                             <select id="disabledSelect" class="form-select form-select-lg mb-3"
@@ -124,21 +128,29 @@
                             </select>
                         </div>
                     </div>
-                    <!-- consulta -->
-                    <div class="container-consulta">
-                        <label class="input-name" for="consulta">Consulta</label>
-                        <textarea class="form-control  form-control-lg" name="consulta" id="" cols="30" rows="7"
-                            maxlength="1000" placeholder="Ingresá tu consulta"></textarea>
-                        <!-- botones -->
-                        <div class="container-botones">
-                            <button type="submit" class="btn btn-outline-secondary btn-lg">Enviar</button>
-                            <button type="reset" class="btn btn-outline-secondary btn-lg">Limpiar</button>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-sm-12 col-md-12 col-lg-12 ">
+                        <div class="container-consulta">
+                            <label class="input-name" for="consulta">Consulta</label>
+                            <textarea class="form-control  form-control-lg" name="consulta" id="" cols="30" rows="7"
+                                maxlength="1000" placeholder="Ingresá tu consulta"></textarea>
                         </div>
                     </div>
                 </div>
-            </form>
-            <!-- FIN FORMULARIO -->
-        </section>
+
+                <div class="row mb-4">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="container-botones">
+                            <button type="submit" class="btn btn-outline-secondary btn-lg m-2">Enviar</button>
+                            <button type="reset" class="btn btn-outline-secondary btn-lg m-2">Limpiar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
 
         <section>
             <div class="container-socialmedia">
