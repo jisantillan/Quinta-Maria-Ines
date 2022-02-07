@@ -1,6 +1,8 @@
 @use '../core/mixins'as *;
 @use '../core/listas'as *;
 @use '../core/variables.scss' as *;
+@use '../core/map.scss' as *;
+
 
 header {
     background-image: url("../assets/images/mujer.jpg");
@@ -29,10 +31,10 @@ header {
     }
 
     #ul-menu li+li:before {
-        content: " | ";
+        content: map-get($befores,   ul_header);
         padding: 0 5px;
         @include for_breakpoint(mobile tablet ) {
-            content:none;
+            content: map-get($befores,   ul_header_mobile);
         }
     }
 
