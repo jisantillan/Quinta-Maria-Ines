@@ -1,0 +1,8 @@
+
+
+@include for_breakpoint(mobile tablet) {
+    .table-scrollable {
+        overflow-x:scroll;
+        
+    }
+}

@@ -16,29 +16,24 @@ footer {
 }
 
 .container-footer-body {
-    @include flex (row, nowrap, center);
+    @include flex (row, wrap, center);
+
     @include for_breakpoint(mobile tablet) {
-        flex-direction: column;
+        @include flex (row, wrap, center);
+       
     }
 }
 
-
-.col2,.col3 {
-    margin-left: 250px;
+.container-footer-menu{
     @include for_breakpoint(mobile tablet) {
-        margin-left: 0;
-        @include flex (row, nowrap, center);
-
+        @include flex (row, wrap, center);
+       
     }
-}
-.col1{
-    @include for_breakpoint(mobile tablet) {
-        margin-left: 0;
-        padding-right:7em; 
-        @include flex (row, nowrap, center);
 
-    }
+
 }
+
+
 
 .container-footer-menu ul li {
     list-style: none;
