@@ -30,6 +30,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!-- Whatsapp-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 </head>
 
@@ -55,220 +58,195 @@
     <!-- Fin Header -->
 
     <main>
-        <section>
-            <div class="encabezado" id="encabezado">
-                <h1>GALERIA DE IMAGENES</h1>
-            </div>
-            <p>Haz clic sobre una imagen si deseas agrandarla</p>
-
-        </section>
+        <div class="enbezado-container" id="encabezado-container">
+            <section class="container aos-init aos-animate" data-aos="fade-up">
+                <div class="encabezado" id="encabezado">
+                    <h1>GALERIA DE IMAGENES</h1>
+                </div>
+                <div>
+                    <p id="gallery-text">Haz clic sobre una imagen si deseas agrandarla</p>
+                </div>
+            </section>
+        </div>
 
         <section class="galeria-container">
 
             <div class="row g-1">
-                <div class="col-sm-6 col-md-6 col-lg-3 item mb-lg-1  ">
-                 <img src="../assets/images/quincho3.jpg" alt="quincho3" onclick="openLightbox();toSlide(1)" class="hover-shadow preview">
+                <div class="col-sm-6 col-md-6 col-lg-3 item mb-lg-1 mt-1  ">
+                    <img src="../assets/images/quincho3.jpg" alt="quincho3" onclick="openLightbox();toSlide(1)"
+                        class="hover-shadow preview">
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 item  mb-lg-1  ">
-                 <img src="../assets/images/comida.jpg"
-                 alt="comida" onclick="openLightbox();toSlide(2)" class="hover-shadow preview">
+                <div class="col-sm-6 col-md-6 col-lg-3 item mb-lg-1 mt-1  ">
+                    <img src="../assets/images/comida.jpg" alt="comida" onclick="openLightbox();toSlide(2)"
+                        class="hover-shadow preview">
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3 item mb-lg-1  ">
-                 <img  src="../assets/images/quincho2.jpg"
-                 alt="quincho2" onclick="openLightbox();toSlide(3)" class="hover-shadow preview">
+                <div class="col-sm-6 col-md-6 col-lg-3 item mb-lg-1 mt-1  ">
+                    <img src="../assets/images/quincho2.jpg" alt="quincho2" onclick="openLightbox();toSlide(3)"
+                        class="hover-shadow preview">
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3  item  mb-lg-1   ">
-                    <img src="../assets/images/hongos.jpg"
-                    alt="hongos" onclick="openLightbox();toSlide(4)" class="hover-shadow preview">
-                   </div>
-               </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 item mb-lg-1 item mb-1   ">
+                    <img src="../assets/images/hongos.jpg" alt="hongos" onclick="openLightbox();toSlide(4)"
+                        class="hover-shadow preview">
+                </div>
+            </div>
 
-               <div class="row g-1">
-                
-                <div class="col-sm-6 col-md-6 col-lg-3 item  mb-lg-1    ">
-                 <img  src="../assets/images/piscina4.jpg"
-                 alt="piscina" onclick="openLightbox();toSlide(5)" class="hover-shadow preview">
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3  item  mb-lg-1  ">
-                 <img src="../assets/images/quincho4.jpg"
-                 alt="quincho" onclick="openLightbox();toSlide(6)" class="hover-shadow preview">
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-3  item  mb-lg-1  ">
-                    <img src="../assets/images/palmera.jpg" alt="palmera" onclick="openLightbox();toSlide(7)" class="hover-shadow preview">
-                   </div>
-                   <div class="col-sm-6 col-md-6 col-lg-3  item  mb-lg-1 ">
-                    <img src="../assets/images/catering.jpeg"
-                    alt="catering" onclick="openLightbox();toSlide(8)" class="hover-shadow preview">
-                   </div>
-               </div>
+            <div class="row g-1">
 
-               <div class="row g-1">
-               
-               
-                <div class="col-sm-6 col-md-6 col-lg-3  item  mb-lg-3   ">
-                 <img src="../assets/images/quincho.jpeg"
-                 alt="quincho" onclick="openLightbox();toSlide(9)" class="hover-shadow preview">
+                <div class="col-sm-6 col-md-6 col-lg-3 item mb-lg-1 mt-1   ">
+                    <img src="../assets/images/piscina4.jpg" alt="piscina" onclick="openLightbox();toSlide(5)"
+                        class="hover-shadow preview">
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-3  item  mb-lg-3  ">
-                    <img src="../assets/images/parque.jpg" alt="parque" onclick="openLightbox();toSlide(10)" class="hover-shadow preview">
-                   </div>
-                   <div class="col-sm-6 col-md-6 col-lg-3 item  mb-lg-3  ">
-                    <img src="../assets/images/piletaCarousel.jpeg"
-                    alt="pileta" onclick="openLightbox();toSlide(11)" class="hover-shadow preview">
-                   </div>
-                   <div class="col-sm-6 col-md-6 col-lg-3 item  mb-lg-3   ">
-                    <img   src="../assets/images/parrilla2.jpeg"
-                    alt="parrilla" onclick="openLightbox();toSlide(12)" class="hover-shadow preview">
-                   </div>
-               </div>
+                <div class="col-sm-6 col-md-6 col-lg-3  item mb-lg-1 mt-1  ">
+                    <img src="../assets/images/quincho4.jpg" alt="quincho" onclick="openLightbox();toSlide(6)"
+                        class="hover-shadow preview">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3  item mb-lg-1 mt-1  ">
+                    <img src="../assets/images/palmera.jpg" alt="palmera" onclick="openLightbox();toSlide(7)"
+                        class="hover-shadow preview">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3  item  mt-1 item mb-1 ">
+                    <img src="../assets/images/catering.jpeg" alt="catering" onclick="openLightbox();toSlide(8)"
+                        class="hover-shadow preview">
+                </div>
+            </div>
 
-             
-               
-               <div id="Lightbox" class="modal">
-               
+            <div class="row g-1">
+
+
+                <div class="col-sm-6 col-md-6 col-lg-3  item mb-lg-1 mt-1  ">
+                    <img src="../assets/images/quincho.jpeg" alt="quincho" onclick="openLightbox();toSlide(9)"
+                        class="hover-shadow preview">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3  item mb-lg-1 mt-1 ">
+                    <img src="../assets/images/parque.jpg" alt="parque" onclick="openLightbox();toSlide(10)"
+                        class="hover-shadow preview">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 item mb-lg-1 mt-1 ">
+                    <img src="../assets/images/piletaCarousel.jpeg" alt="pileta" onclick="openLightbox();toSlide(11)"
+                        class="hover-shadow preview">
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 item mb-lg-1 mt-1   ">
+                    <img src="../assets/images/parrilla2.jpeg" alt="parrilla" onclick="openLightbox();toSlide(12)"
+                        class="hover-shadow preview">
+                </div>
+            </div>
+
+
+
+            <div id="Lightbox" class="modal">
+
                 <span class="close pointer" onclick="closeLightbox()">&times;</span>
                 <div class="modal-content">
-                 <div class="slide">
-                  <img src="../assets/images/quincho3.jpg" class="image-slide" alt="quincho3" />
-                 </div>
-                 <div class="slide">
-                  <img src="../assets/images/comida.jpg"
-                   class="image-slide" alt="comida" />
-                 </div>
-                 <div class="slide">
-                  <img src="../assets/images/quincho2.jpg"
-                  alt="quincho2" class="image-slide" />
-                 </div>
-                 <div class="slide">
-                    <img src="../assets/images/hongos.jpg"
-                    alt="hongos" class="image-slide" />
-                   </div>
-                   <div class="slide">
-                    <img src="../assets/images/piscina4.jpg"
-                    alt="piscina" class="image-slide" />
-                   </div>
-                   <div class="slide">
-                    <img src="../assets/images/quincho4.jpg"
-                    alt="quincho" class="image-slide" />
-                   </div>
-               
-                   <div class="slide">
-                    <img src="../assets/images/palmera.jpg" alt="palmera" class="image-slide" />
-                   </div>
-                   <div class="slide">
-                    <img src="../assets/images/catering.jpeg"
-                    alt="catering" class="image-slide" />
-                   </div>
-                   <div class="slide">
-                    <img  src="../assets/images/quincho.jpeg"
-                    alt="quincho" class="image-slide" />
-                   </div>
-                   <div class="slide">
-                    <img src="../assets/images/parque.jpg" alt="parque" class="image-slide" />
-                   </div>
-                   <div class="slide">
-                    <img src="../assets/images/piletaCarousel.jpeg"
-                    alt="pileta" class="image-slide" />
-                   </div>
-                   <div class="slide">
-                    <img src="../assets/images/parrilla2.jpeg"
-                    alt="parrilla" class="image-slide" />
-                   </div>
-               
-                 <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
-                 <a class="next" onclick="changeSlide(1)">&#10095;</a>
-               
-                 <!-- <div class="dots">
-                  <div class="col">
-                   <img src="https://static.pexels.com/photos/385997/pexels-photo-385997.jpeg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Toy Car Touring City">
-                  </div>
-                  <div class="col">
-                   <img src="https://static.pexels.com/photos/574521/pexels-photo-574521.jpeg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Toy Car Touring City">
-                  </div>
-                  <div class="col">
-                   <img src="https://static.pexels.com/photos/386009/pexels-photo-386009.jpeg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Toy Car Touring City">
-                  </div>
-                 </div> -->
-               
+                    <div class="slide">
+                        <img src="../assets/images/quincho3.jpg" class="image-slide" alt="quincho3" />
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/comida.jpg" class="image-slide" alt="comida" />
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/quincho2.jpg" alt="quincho2" class="image-slide" />
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/hongos.jpg" alt="hongos" class="image-slide" />
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/piscina4.jpg" alt="piscina" class="image-slide" />
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/quincho4.jpg" alt="quincho" class="image-slide" />
+                    </div>
+
+                    <div class="slide">
+                        <img src="../assets/images/palmera.jpg" alt="palmera" class="image-slide" />
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/catering.jpeg" alt="catering" class="image-slide" />
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/quincho.jpeg" alt="quincho" class="image-slide" />
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/parque.jpg" alt="parque" class="image-slide" />
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/piletaCarousel.jpeg" alt="pileta" class="image-slide" />
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/images/parrilla2.jpeg" alt="parrilla" class="image-slide" />
+                    </div>
+                    <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
                 </div>
-               </div>
-            
+            </div>
+
         </section>
-               <section video-container>
-                <div class="video-galeria">
-                    <video src="../assets/video/video.mp4" type="video/mp4" controls="play"></video>
-                </div>
-          </section>
+        <section video-container>
+            <div class="video-galeria">
+                <video src="../assets/video/video.mp4" type="video/mp4" controls="play"></video>
+            </div>
+        </section>
     </main>
-     <!-- Inicio Footer -->
-     <footer>
-        <div class="container">
+    <!-- Inicio Footer -->
+    <footer>
         <div class="container-footer-all">
             <div class="container-footer-body">
-            <div class="row">
-
-                <div class=" col-sm-6 col-md-4 col-lg-4  ">
-                    <div class="container-footer-menu">
-                        <ul>
-                            <li><a href="#">Terminos y Condiciones</a></li>
-                            <li><a href="#">Política de privacidad</a></li>
-                            <li><a href="#">Política de cookies</a></li>
-                            <li><a href="#">Condiciones de contratación</a></li>
-                        </ul>
+                <div class="row m-1">
+                    <div class=" col-sm-6 col-md-4 col-lg-4 ">
+                        <div class="container-footer-menu">
+                            <ul>
+                                <li><a href="galeria.html">Galeria</a></li>
+                                <li><a href="servicios.html">Servicios</a></li>
+                                <li><a href="disponibilidad.html">Disponibilidad</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-
-                <div class=" col-sm-6 col-md-4 col-lg-4 ">
-                    <div class="container-footer-menu">
-                        <ul>
-                            <li><a href="galeria.html">Galeria</a></li>
-                            <li><a href="servicios.html">Servicios</a></li>
-                            <li><a href="disponibilidad.html">Disponibilidad</a></li>
-                            <li><a href="contacto.html">Contacto</a></li>
-                        </ul>
+                    <div class=" col-sm-6 col-md-4 col-lg-4  ">
+                        <div class="container-footer-menu">
+                            <ul>
+                                <li><a href="#">Terminos y Condiciones</a></li>
+                                <li><a href="#">Política de privacidad</a></li>
+                                <li><a href="#">Política de cookies</a></li>
+                                <li><a href="#">Condiciones de contratación</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-
-                
-
-
-                <div class=" col-sm-12 col-md-4 col-lg-4">
-                    <div class="container-footer-menu">
-                        <ul>
-                            <li> <p> Nuestras Redes</p></li>
-                            <li>  <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
-                                    width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8d8741"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <rect x="4" y="4" width="16" height="16" rx="4" />
-                                    <circle cx="12" cy="12" r="3" />
-                                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                                </svg></a> 
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
-                                        width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8d8741"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                                    </svg>
-                                </a></li>
-                        </ul>
+                    <div class=" col-sm-12 col-md-4 col-lg-4 ">
+                        <div class="container-footer-menu">
+                            <ul class="ul-footer">
+                                <li>
+                                    <h5> Nuestras Redes</h2>
+                                </li>
+                                <li>
+                                    <div class="wrapper">
+                                        <div class="icon facebook">
+                                            <div class="tooltip">Facebook</div>
+                                            <span><i class=" fa fas fa-facebook-f"></i></span>
+                                        </div>
+                                        <div class="icon wsp" id="icon whatsapp">
+                                            <div class="tooltip">Whatsapp</div>
+                                            <span><i class="fa fa-whatsapp" aria-hidden="true"> </i></span>
+                                        </div>
+                                        <div class="icon instagram">
+                                            <div class="tooltip">Instagram</div>
+                                            <span><i class="fa fas fa-instagram"></i></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-        </div>
             <div class="container-end-footer">
                 <div class="creacion">
                     <p>Creado por Javier </p>
-
                 </div>
                 <div class="linkedin-github">
                     <a href="https://www.linkedin.com/in/javiersantillan1/">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
                             width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8d8741" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            stroke-linecap="round" stroke-linejoin="round" id="linkedin">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <rect x="4" y="4" width="16" height="16" rx="2" />
                             <line x1="8" y1="11" x2="8" y2="16" />
@@ -280,31 +258,29 @@
                     <a href="https://github.com/jisantillan">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
                             width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8d8741" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            stroke-linecap="round" stroke-linejoin="round" id="github">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path
                                 d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                         </svg>
                     </a>
                 </div>
-
                 <div class="copyright">
-                    <p>© 2021 Quinta Maria Ines. Todos los derechos reservados.</p>
+                    <p>© 2022 Quinta Maria Ines. Todos los derechos reservados.</p>
                 </div>
             </div>
-
-
         </div>
-    </div>
     </footer>
     <!-- Fin Footer -->
     <script src="../js/menu.js"></script>
     <script src="../js/modal.js"></script>
 
     <script src="../js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

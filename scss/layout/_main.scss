@@ -10,6 +10,14 @@ $desktop: 1024px;
 	}
 }
 
+.aos-init aos-animate{
+	margin: 0;
+}
+
+.encabezado-container {
+	padding-top: 30px;
+}
+
 
 
 
@@ -241,7 +249,7 @@ body{
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 40px;
+    bottom: 70px;
     right: 40px;
     background-color: #8d8741;
     color: #FFF;
@@ -265,6 +273,7 @@ body{
     color: #FFF;
     transform: scale(1.05);
     transition: all .5s;
+	background-color: #00bb2d;
 }
 
 .encabezado {
@@ -276,12 +285,7 @@ body{
 
 
 
-.container{
-    margin-top: 0px;
-    @include for_breakpoint(mobile tablet ) {
-        margin-top: 20px;
-    }
-}
+
 
 #card-service :hover, #card-service2 :hover, #card-service3 :hover {
 @include prefijos(scale(1.05));

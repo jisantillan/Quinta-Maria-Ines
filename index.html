@@ -26,15 +26,15 @@
     <title> Inicio - Quinta de Recreo Maria Ines </title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!-- Whatsapp-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- js -->
+    <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 <body>
     <!-- Inicio Header -->
@@ -55,37 +55,29 @@
             </ul>
         </nav>
         <div class="slide-down">
-            <a href="#encabezado"><i class="fa fas fa-chevron-down arrow-from-top" aria-hidden="true"></i></a>
+            <a href="#encabezado-container"><i class="fa fas fa-chevron-down arrow-from-top" aria-hidden="true"></i></a>
         </div>
     </header>
     <!-- Fin Header -->
     <main>
         <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20de%20la%20quinta"
             class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-
-
-        <section>
-            <div class="encabezado" id="encabezado">
-                <h1>Bienvenido a Quinta Maria Ines</h1>
-
-            </div>
-            <p>
-
-                Una hectárea de parque, inmerso en un hermoso paisaje. Contamos con un amplio estacionamiento, parrilla
-                y juegos. <br>
-
-                <b> Los esperamos. </b>
-
-            </p>
-
-            <div class="content-button">
-                <a href="#contacto"><button class="button-55" role="button"> ¿ Como Llegar ?</button></a>
-            </div>
-
-
-
-        </section>
-
+        <div class="enbezado-container" id="encabezado-container">
+            <section class="container aos-init aos-animate" data-aos="fade-up">
+                <div class="encabezado" id="encabezado">
+                    <h1>Bienvenido a Quinta Maria Ines</h1>
+                </div>
+                <p>
+                    Una hectárea de parque, inmerso en un hermoso paisaje. Contamos con un amplio estacionamiento,
+                    parrilla
+                    y juegos. <br>
+                    <b> Los esperamos. </b>
+                </p>
+                <div class="content-button">
+                    <a href="#contacto"><button class="button-55" role="button"> ¿ Como Llegar ?</button></a>
+                </div>
+            </section>
+        </div>
         <section id="carousel">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -134,8 +126,8 @@
                 </button>
             </div>
         </section>
-        
-        <section id="all-pages">
+
+        <section class="container aos-init aos-animate" data-aos="fade-up">
             <div class="container-index">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-6 mb-6">
@@ -144,28 +136,27 @@
                                 <img src="assets/images/portada.jpg" alt="portada" class="img-index">
                                 <figcaption class="card__caption">
                                     <h2 class="card__title">Galeria</h2>
-                                    <p class="card__snippet">Visita nuestra galeria de imágenes y videos sobre las distintas atracciones de la quinta.</p>
+                                    <p class="card__snippet">Visita nuestra galeria de imágenes y videos sobre las
+                                        distintas atracciones de la quinta.</p>
                                     <a href="" class="card__button">Ver más </a>
                                 </figcaption>
                             </figure>
                         </div>
-
                     </div>
 
                     <div class="col-sm-12 col-md-12 col-lg-6 mb-6">
                         <div class="card">
                             <figure class="card__thumb">
-                                <img src="assets/images/pingpong.jpg"
-                                    alt="Picture by Nathan Dumlao" class="img-index">
+                                <img src="assets/images/pingpong.jpg" alt="Picture by Nathan Dumlao" class="img-index">
                                 <figcaption class="card__caption">
                                     <h2 class="card__title">Servicios</h2>
-                                    <p class="card__snippet">En Quinta Maria Ines contamos con una amplia variedad de servicios pensados para su mayor confort
+                                    <p class="card__snippet">En Quinta Maria Ines contamos con una amplia variedad de
+                                        servicios pensados para su mayor confort.
                                     </p>
                                     <a href="" class="card__button">Ver más</a>
                                 </figcaption>
                             </figure>
                         </div>
-
                     </div>
                 </div>
                 <div class="row">
@@ -187,63 +178,49 @@
                         <div class="card">
                             <figure class="card__thumb">
                                 <img src="https://le-cdn.website-editor.net/14b94bbd18b34755805ec7735dd7712c/dms3rep/multi/opt/Contacto3_Mesa-de-trabajo-1_Mesa-de-trabajo-1-1920w.png"
-                                    alt="Picture by Daniel Lincoln" class="img-index" >
+                                    alt="Picture by Daniel Lincoln" class="img-index">
                                 <figcaption class="card__caption">
                                     <h2 class="card__title">Contacto</h2>
-                                    <p class="card__snippet">Contactate con nosotros, para .</p>
+                                    <p class="card__snippet">Contactate con nosotros.</p>
                                     <a href="" class="card__button">Ver más</a>
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
-
-         
-
         </section>
 
-        <section id="opinion">
-        <div class="container">
+        <section id="opinion" >
+            <div class="container">
             <div id="opinion-text">
-            <p>Nuestros clientes opinan</p>
-        </div>
-        <div class="card-group" id="card-group-opinion">
-            <div class="card m-2">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
+                <p>Nuestros clientes opinan</p>
             </div>
-            <div class="card m-2">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
+            <div class="card-group" id="card-group-opinion">
+                <div class="card m-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Francisco Bermudez</h5>
+                        <p class="card-text">Excelente ubicación, muy buen trato de los propietarios.</p>
+                    </div>
+                   
+                </div>
+                <div class="card m-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Maria Fernandez</h5>
+                        <p class="card-text">Excelente atención.</p>
+                    </div>
+                  
+                </div>
+                <div class="card m-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Juan Carlos Salvatierra</h5>
+                        <p class="card-text">Ideal para pasar en familia .</p>
+                    </div>
+                   
+                </div>
             </div>
-            <div class="card m-2">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
             </div>
-          </div>
-        </div>
-
         </section>
-
 
         <!-- mapa -->
         <section class="contacto" id="contacto">
@@ -253,110 +230,103 @@
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.7782824526453!2d-58.7803717842613!3d-34.432386555960896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9f2196a40e21%3A0x195ac6baca986c2a!2sJuan%20Bautista%20Ambrosetti%203141%2C%20B1635ATE%20Manuel%20Alberti%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1639102600001!5m2!1ses!2sar"
                         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-              
             </div>
-
         </section>
         <!-- fin mapa -->
-
     </main>
 
     <!-- Inicio Footer -->
     <footer>
-            <div class="container-footer-all">
-                <div class="container-footer-body">
-                    <div class="row ">
-
-                        <div class=" col-sm-6 col-md-4 col-lg-4   ">
-                            <div class="container-footer-menu">
-                                <ul>
-                                    <li><a href="#">Terminos y Condiciones</a></li>
-                                    <li><a href="#">Política de privacidad</a></li>
-                                    <li><a href="#">Política de cookies</a></li>
-                                    <li><a href="#">Condiciones de contratación</a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class=" col-sm-6 col-md-4 col-lg-4 ">
-                            <div class="container-footer-menu">
-                                <ul>
-                                    <li><a href="views/galeria.html">Galeria</a></li>
-                                    <li><a href="views/servicios.html">Servicios</a></li>
-                                    <li><a href="views/disponibilidad.html">Disponibilidad</a></li>
-                                    <li><a href="views/contacto.html">Contacto</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class=" col-sm-12 col-md-4 col-lg-4 ">
-                            <div class="container-footer-menu">
-                                <ul>
-                                    <li>
-                                        <p> Nuestras Redes</p>
-                                    </li>
-                                    <li> 
-                                        <div class="wrapper">
-                                            <div class="icon facebook">
-                                              <div class="tooltip">Facebook</div>
-                                              <span><i class=" fa fas fa-facebook-f"></i></span>
-                                            </div>
-                                         
-                                            <div class="icon instagram">
-                                              <div class="tooltip">Instagram</div>
-                                              <span><i class="fa fas fa-instagram"></i></span>
-                                            </div>
-                                          
-                                            
-                                          </div>
-                                    </li>
-                                       
-                                </ul>
-                            </div>
+        <div class="container-footer-all">
+            <div class="container-footer-body">
+                <div class="row m-1">
+                    <div class=" col-sm-6 col-md-4 col-lg-4 ">
+                        <div class="container-footer-menu">
+                            <ul>
+                                <li><a href="views/galeria.html">Galeria</a></li>
+                                <li><a href="views/servicios.html">Servicios</a></li>
+                                <li><a href="views/disponibilidad.html">Disponibilidad</a></li>
+                                <li><a href="views/contacto.html">Contacto</a></li>
+                            </ul>
                         </div>
                     </div>
-               
-
-                </div>
-                <div class="container-end-footer">
-                    <div class="creacion">
-                        <p>Creado por Javier </p>
-
+                    <div class=" col-sm-6 col-md-4 col-lg-4  ">
+                        <div class="container-footer-menu">
+                            <ul>
+                                <li><a href="#">Terminos y Condiciones</a></li>
+                                <li><a href="#">Política de privacidad</a></li>
+                                <li><a href="#">Política de cookies</a></li>
+                                <li><a href="#">Condiciones de contratación</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="linkedin-github">
-                        <a href="https://www.linkedin.com/in/javiersantillan1/">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
-                                width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8d8741"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <rect x="4" y="4" width="16" height="16" rx="2" />
-                                <line x1="8" y1="11" x2="8" y2="16" />
-                                <line x1="8" y1="8" x2="8" y2="8.01" />
-                                <line x1="12" y1="16" x2="12" y2="11" />
-                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                            </svg>
-                        </a>
-                        <a href="https://github.com/jisantillan">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
-                                width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8d8741"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path
-                                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                            </svg>
-                        </a>
-                    </div>
-
-                    <div class="copyright">
-                        <p>© 2021 Quinta Maria Ines. Todos los derechos reservados.</p>
+                    <div class=" col-sm-12 col-md-4 col-lg-4 ">
+                        <div class="container-footer-menu">
+                            <ul class="ul-footer">
+                                <li>
+                                    <h5> Nuestras Redes</h2>
+                                </li>
+                                <li>
+                                    <div class="wrapper">
+                                        <div class="icon facebook">
+                                            <div class="tooltip">Facebook</div>
+                                            <span><i class=" fa fas fa-facebook-f"></i></span>
+                                        </div>
+                                        <div class="icon wsp" id="icon whatsapp">
+                                            <div class="tooltip">Whatsapp</div>
+                                            <span><i class="fa fa-whatsapp" aria-hidden="true"> </i></span>
+                                        </div>
+                                        <div class="icon instagram">
+                                            <div class="tooltip">Instagram</div>
+                                            <span><i class="fa fas fa-instagram"></i></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
+            <div class="container-end-footer">
+                <div class="creacion">
+                    <p>Creado por Javier </p>
+                </div>
+                <div class="linkedin-github">
+                    <a href="https://www.linkedin.com/in/javiersantillan1/">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8d8741" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" id="linkedin">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <line x1="8" y1="11" x2="8" y2="16" />
+                            <line x1="8" y1="8" x2="8" y2="8.01" />
+                            <line x1="12" y1="16" x2="12" y2="11" />
+                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/jisantillan">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                            width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#8d8741" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" id="github">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="copyright">
+                    <p>© 2022 Quinta Maria Ines. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- Fin Footer -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/menu.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

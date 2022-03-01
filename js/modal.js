@@ -7,7 +7,7 @@ showSlide(slideIndex);
 // your previews, dots, controls and the close button.
 
 function openLightbox() {
-    if(window.innerWidth > 900){
+    if(window.innerWidth > 968){
 
   document.getElementById('Lightbox').style.display = 'block';
     }

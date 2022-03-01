@@ -25,16 +25,39 @@ footer {
 }
 
 .container-footer-menu{
-    @include flex (row, wrap, center);
-    @include for_breakpoint(mobile tablet) {
-        @include flex (row, wrap, center);
+     @include flex (row, wrap, center);
+     align-items: flex-start;
+    // align-items: flex-start;
+    // text-align: start;  
+     @include for_breakpoint(mobile tablet) {
+    //     @include flex (row, wrap, center);
+    justify-content:flex-start;
+     }
        
+    // }
+    .ul-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: flex-start;
     }
 
 
 }
+.container-end-footer{
+  @include flex (column, wrap, center);
+  @include for_breakpoint(mobile tablet) {
+    //     @include flex (row, wrap, center);
+    justify-content:flex-start;
+     }
 
-
+}
+.creacion,.linkedin-github,.copyright{
+  @include for_breakpoint(mobile tablet) {
+    //     @include flex (row, wrap, center);
+    size: .2em;
+     }
+}
 
 .container-footer-menu ul li {
     list-style: none;
@@ -86,8 +109,8 @@ footer {
 	border-radius: 50%;
 	padding: 15px;
 	margin: 10px;
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	font-size: 18px;
 	display: flex;
 	justify-content: center;
@@ -152,3 +175,17 @@ footer {
 	background-color: #e1306c;
 	color: #ffffff;
   }
+
+  .wrapper .wsp:hover,
+  .wrapper .wsp:hover .tooltip,
+  .wrapper .wsp:hover .tooltip::before {
+	background-color: #00bb2d;
+	color: #ffffff;
+  }
+
+  #linkedin:hover, #github:hover {
+    color: #FFF;
+    transform: scale(1.05);
+    transition: all .2s;
+}
+

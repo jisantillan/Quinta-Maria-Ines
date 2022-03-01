@@ -10,6 +10,8 @@ header {
   background-attachment: fixed;
   height: 58em;
   padding-top: 2em;
+  /* Buscamos por key */
+  /* Buscamos por key */
 }
 header .ul-menu {
   display: flex;
@@ -62,9 +64,29 @@ header nav ul li a {
   text-decoration: none;
   line-height: 1.5;
   letter-spacing: 0.071em;
+  font-size: 1.3em;
+  font-stretch: normal;
+  line-height: 1.5;
 }
 header nav ul li a:hover {
   font-weight: 900;
+  color: rgba(0, 0, 0, 0.55);
+}
+@media only screen and (max-width: 667px), only screen and (min-width: 481px) and (max-width: 968px) {
+  header nav ul li a {
+    color: black;
+    font-family: "Bahnschrift", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-stretch: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.5;
+    letter-spacing: 0.071em;
+    font-size: 1.6em;
+    font-stretch: normal;
+  }
 }
 header .hamburguer {
   background-color: transparent;
@@ -102,6 +124,14 @@ header .slide-down {
 /* Media Queries */
 /* Diccionario o Map */
 /* Condicionales*/
+.aos-init aos-animate {
+  margin: 0;
+}
+
+.encabezado-container {
+  padding-top: 30px;
+}
+
 .container-index {
   display: flex;
   flex-wrap: wrap;
@@ -332,7 +362,7 @@ body {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 40px;
+  bottom: 70px;
   right: 40px;
   background-color: #8d8741;
   color: #FFF;
@@ -356,6 +386,7 @@ body {
   color: #FFF;
   transform: scale(1.05);
   transition: all 0.5s;
+  background-color: #00bb2d;
 }
 
 .encabezado {
@@ -364,17 +395,6 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
   padding-top: 2em;
-}
-
-.container {
-  margin-top: 0px;
-  /* Buscamos por key */
-  /* Buscamos por key */
-}
-@media only screen and (max-width: 667px), only screen and (min-width: 481px) and (max-width: 968px) {
-  .container {
-    margin-top: 20px;
-  }
 }
 
 #card-service :hover, #card-service2 :hover, #card-service3 :hover {
@@ -472,15 +492,43 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   /* Buscamos por key */
   /* Buscamos por key */
 }
 @media only screen and (max-width: 667px), only screen and (min-width: 481px) and (max-width: 968px) {
   .container-footer-menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+}
+.container-footer-menu .ul-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+.container-end-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Buscamos por key */
+  /* Buscamos por key */
+}
+@media only screen and (max-width: 667px), only screen and (min-width: 481px) and (max-width: 968px) {
+  .container-end-footer {
+    justify-content: flex-start;
+  }
+}
+
+.creacion, .linkedin-github, .copyright {
+  /* Buscamos por key */
+  /* Buscamos por key */
+}
+@media only screen and (max-width: 667px), only screen and (min-width: 481px) and (max-width: 968px) {
+  .creacion, .linkedin-github, .copyright {
+    size: 0.2em;
   }
 }
 
@@ -563,8 +611,8 @@ footer {
   border-radius: 50%;
   padding: 15px;
   margin: 10px;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   font-size: 18px;
   display: flex;
   justify-content: center;
@@ -627,12 +675,26 @@ footer {
   color: #ffffff;
 }
 
+.wrapper .wsp:hover,
+.wrapper .wsp:hover .tooltip,
+.wrapper .wsp:hover .tooltip::before {
+  background-color: #00bb2d;
+  color: #ffffff;
+}
+
+#linkedin:hover, #github:hover {
+  color: #FFF;
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+
 label {
   text-transform: uppercase;
 }
 
 .video-galeria {
   margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 .img-gallery {
@@ -646,8 +708,16 @@ label {
 /* Buscamos por key */
 /* Buscamos por key */
 @media only screen and (max-width: 667px), only screen and (min-width: 481px) and (max-width: 968px) {
+  #gallery-text {
+    display: block;
+    display: none;
+  }
+}
+/* Buscamos por key */
+/* Buscamos por key */
+@media only screen and (max-width: 667px), only screen and (min-width: 481px) and (max-width: 968px) {
   .video-galeria video {
-    margin: 20px;
+    margin-top: 5px;
     width: -webkit-fill-available;
     width: -moz-available;
   }

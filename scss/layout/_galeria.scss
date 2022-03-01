@@ -1,5 +1,6 @@
 .video-galeria{
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .img-gallery {
@@ -10,16 +11,21 @@
 }
 
 
+@include for_breakpoint(mobile tablet) {
 
-
-
+#gallery-text{
+  display: block;
+  display: none;
+}
+}
 
 @include for_breakpoint(mobile tablet) {
     .video-galeria video{
-        margin: 20px;
+        margin-top: 5px;
         width: -webkit-fill-available;
         width: -moz-available; 
     }
+
 }
 .preview {
 	width: 100%;

@@ -48,10 +48,20 @@ header {
     nav ul li a {
         @include texto ($default-font, nth($colores, 1), 1.5rem, 200, normal, center, uppercase, none, 1.5);
         letter-spacing: 0.071em;
-
+        font-size: 1.3em;
+        font-stretch: normal;
+        line-height: 1.5;
         &:hover {
             font-weight: 900;
+            color: rgba(0,0,0,.55);
         }
+    }
+    @include for_breakpoint(mobile tablet) {
+        nav ul li a {
+            @include texto ($default-font, nth($colores, 1), 1.5rem, 200, normal, center, uppercase, none, 1.5);
+            letter-spacing: 0.071em;
+            font-size: 1.6em;
+            font-stretch: normal;    }
     }
 
     .hamburguer {
